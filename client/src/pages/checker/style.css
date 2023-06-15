@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+:root
+{
+    --primary: #333;
+    --input-bg: #555;
+    --text-color: #999;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+    color: var(--text-color);
+
+   
+    
+
+    font: 400 1rem sans-serif;
+    background-color: #222;
+}
+.password-checker
+{
+    margin: 4rem auto;
+    width: 50vw;
+    background-color: var(--primary);
+    padding: 2rem;
+    border-radius: 1rem;
+
+    border: .1rem solid transparent;
+    transition: .4s ease-in-out;
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 4px 12px;
+}
+
+.password-checker:hover
+{
+    transform: scale(1.05);
+}
+
+h1
+{
+    font: 800 2rem sans-serif;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.input-group
+{
+
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+}
+.input-group::before
+{
+    position: absolute;
+    content: '\1f512';
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input#password
+{
+    width: 100%;
+    padding: 1rem 1rem 1rem 2.8rem;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+    border-radius: .5rem;
+    border: none;
+}
+
+h5
+{
+    margin: 3rem 0 1.5rem ;
+}
+
+.progress
+{
+    height: .4rem;
+    width: 100%;
+    background-color: white;
+    border-radius: .4rem;
+}
+
+.bar
+{
+    width: 0%;
+    height: 100%;
+    background-color: unset;
+    border-radius: inherit;
+    transition: .4s ease-in-out;
+}
+
+button {
+    margin-right: 1px;
+    min-width: 60px;
+    position: absolute;
+    border-radius: 5px;
+    right: 0px;
+    border: none;
+    top: 0;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+    background-color: #777;
+    transform: translateX(2px);
+    transition: 0.3s; 
+    content: '\f06e';
+    font-family: fontAwesome;
+}
+
+button:hover
+ {
+    background-color: #888;
+}
+
+
+input
+{
+    outline: none;
+}
+
+.validation ul li
+{
+   position: relative;
+   margin: 13px 10px 10px 0px; 
+   font-size: 1.5rem;
+   list-style: none;
+   transition: 0.5s;
+}
+
+
+.validation ul li::before
+{
+    margin-right: 10px;
+    content: '\f192';
+    width: 20px;
+    height: 10px;
+    display: inline-flex;
+    transition: 0,5s;
+    font-family: fontAwesome;
+}
+
+.validation ul li.valid
+{
+    opacity: 0.5;
+}
+
+.validation ul li.valid::before
+{
+
+    content: '\f00c';
+    color: green;
+}

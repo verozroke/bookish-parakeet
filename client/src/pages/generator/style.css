@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+:root
+{
+    --primary: #333;
+    --input-bg: #555;
+    --text-color: #999;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+    color: var(--text-color);
+
+
+    font: 400 1rem sans-serif;
+    background-color: #222;
+}
+.generator
+{
+    margin: 4rem auto;
+    width: 50vw;
+    background-color: var(--primary);
+    padding: 2rem;
+    border-radius: 1rem;
+
+    border: .1rem solid transparent;
+    transition: .4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 4px 12px;
+
+}
+
+.generator:hover
+{
+    transform: scale(1.05);
+}
+
+h1
+{
+    font: 800 2rem sans-serif;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+
+#password
+{
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+}
+
+
+#copy {
+    margin-right: 1px;
+    min-width: 60px;
+    position: absolute;
+    border-radius: 5px;
+    right: 0px;
+    border: none;
+    top: 0;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+    background-color: #777;
+    transform: translateX(2px);
+    transition: 0.3s; 
+    content: '\f06e';
+    font-family: fontAwesome;
+    cursor: pointer;
+}
+
+#copy:hover
+ {
+    background-color: #888;
+}
+.input-group
+{
+
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+input:not([type="checkbox"]),button{
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    color:var(--text-color);
+    font-size: 20px;
+}
+
+label input[type="checkbox"]{
+    cursor: pointer;
+    float: right;   
+    accent-color: red;
+}
+
+#generate{
+    margin-right: 1px;
+    width: 220px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    color: #222;
+    background-color: #777;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#generate:hover{
+    color: #222;
+    background-color: #888;
+    transition: 0.5s;
+}
+
+label{
+    display: block;
+    flex: 1 1 0%;
+    margin: 22px 22px 22px 0px;
+    font-size: 20px;
+    user-select: none;
+}
+
+label input[type="number"]{
+    text-align: right;
+    float: right;
+}
+label input[type="submit"]{
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

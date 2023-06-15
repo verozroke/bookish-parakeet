@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+:root
+{
+    --primary: #333;
+    --input-bg: #555;
+    --text-color: #999;
+}
+
+*
+{
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    margin: 0;
+}
+
+body{
+    color: var(--text-color);
+
+    font: 400 1rem sans-serif;
+    background-color: #222;   
+}
+ 
+
+.container{
+
+    background-color: var(--primary);
+    color: #999;
+    width: 700px;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 4px 12px;
+    background-color: var(--primary);
+    padding: 2rem;
+    border-radius:1rem;
+    transition: 0.5s;
+}
+
+
+input[type = text]{
+    padding: 4px;
+    width: 365px;
+}
+input[type = button]{
+    height: 40px;
+    min-width: 60px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #222;
+    background-color: #777;;
+    transition: 0.3s; 
+    font-size: larger;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+input[type = button]:hover{
+    color: #222;
+    background-color: #888;
+    transition: 0.5s;
+}
+
+
+input[type = file]{
+    display: none;
+    cursor: pointer;
+    margin: auto;
+}
+
+input[type = text]{
+    background-color: var(--input-bg);
+    font-size: larger;
+    cursor: pointer;
+    margin-right: 60px;
+    color: var(--text-color);
+    border: none;
+    padding: 5px 5px 5px 5px;
+    border-radius: 0.3rem;
+}
+
+.base64-output{
+    margin: 20px auto;
+    padding: 4px;
+    caret-color: var(--input-bg);
+}
+textarea{
+    width: 690px;
+    height: 180px;
+    padding: 4px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border-radius: 0.5rem;
+    margin: 5px 0px 5px 0px;
+    font-size: larger;
+}
+
+h1
+{
+    font: 800 2rem sans-serif;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.custom-file-upload{
+    background-color: var(--input-bg);
+    margin-right: 60px;
+    font-size: larger;
+    border-radius: 0.3rem;
+    padding-bottom: 3px;
+    cursor: pointer;
+    padding: 5px;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./globalstyle.css">
+
+    <style>
+      #anon{
+        width: 500px;
+        height: 500px;
+        border-radius: 100%;
+        border: 3px solid #777;
+      }
+      .container{
+        color: rgb(158, 22, 22);
+        font-size: larger;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+        align-items: center;
+      }
+
+      .container2{
+        color: rgb(158, 22, 22);
+        font-size: larger;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        padding: 50px 50px 0 50px;
+        align-items: center;
+      }
+
+      .container3{
+        color: rgb(158, 22, 22);
+        font-size: larger;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        padding: 0px 50px 50px 50px;
+        align-items: center;
+      }
+
+      h1{
+
+       font-size: 100px;
+       margin-right: 20px;
+      }
+      h2{
+        font-size: 40px;
+      }
+      h3{
+
+        font-size: 30px;
+        color: rgb(73, 73, 223);
+      }
+
+      button{
+        border-radius: 1.5rem;
+        background-color: #666;
+        border: none;
+        width: 300px;
+        height: 100px;
+        font-size: 40px;
+        font-weight: 900;
+        color: #222;
+        transition: 0.5s;
+      }
+
+      button:hover{
+        background-color: #777;
+      }
+
+      #str{
+        border-radius: 5rem;
+        width: 900px;
+      }
+
+      hr{
+       background-color: #333;
+       height: 3px;
+       border: none;
+      }
+
+      @media(max-width: 1050px){
+        .container{
+        color: rgb(158, 22, 22);
+        font-size: larger;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+      }
+      }
+    </style>
+
+    <title>Vite App</title>
+  </head>
+  <body style="margin: 0;">
+
+  
+    <div id="app">
+      <header class="header">
+        <h1 class="logo"><a href="#">CyberSecurity</a></h1>
+          <ul class="main-nav" id="navbar-authorized">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./src/pages/checker/checker.html">Password Checker</a></li>
+              <li><a href="./src/pages/generator/generator.html">Password Generator</a></li>
+              <li><a href="./src/pages/coding/coding.html">Base64</a></li>
+              <li id="nickname">userNickname</li>
+          </ul>
+          <ul class="main-nav" id="navbar-unauthorized">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./src/pages/register/register.html">Register</a></li>
+            <li><a href="./src/pages/login/login.html">Login</a></li>
+            <li></li>
+        </ul>
+      </header> 
+
+      <div class="container">
+        <h1>Your password is not safe!</h1>
+        <img src="https://sova.news/wp-content/uploads/2022/02/anonymus3.jpeg" alt="" id="anon">
+      </div>
+      <hr>
+      <div class="container2">
+        <img src="https://stytch.com/blog/wp-content/uploads/2022/11/final_password-strength_header-1.png" alt="" id="str">
+        <h2>Check Your password or generate and make your protection a lot better!</h2>
+      </div>
+      <hr>
+
+      <div class="container3">
+        <h3>Register now and get full acces for these tools:</h3>
+        <button><a href="./src/pages/register/register.html">Register</a></button>
+      </div>
+
+
+      </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
